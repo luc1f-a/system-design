@@ -18,4 +18,11 @@ public class GroupController : ControllerBase
     {
         return Ok();
     }
+    
+    [HttpGet("{userId:guid}/groups")]
+    public IEnumerable<GetUserGroupsResponseDto> GetUserGroups(Guid userId)
+    {
+        return new List<GetUserGroupsResponseDto>();
+    }
+
 }

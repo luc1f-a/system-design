@@ -21,11 +21,6 @@ public class UserController : ControllerBase
         return Ok();
     }
 
-    [HttpGet("{userId:guid}/groups")]
-    public IEnumerable<GetUserGroupsResponseDto> GetUserGroups(Guid userId)
-    {
-        return new List<GetUserGroupsResponseDto>();
-    }
 
     [HttpGet("{userId:guid}/friends")]
     public IEnumerable<User> GetFriends([FromRoute] Guid userId)
@@ -33,9 +28,4 @@ public class UserController : ControllerBase
         return new List<User>();
     }
 
-    [HttpGet("{userId:guid}/posts")]
-    public UserPostsDto GetUserPosts([FromRoute] Guid userId)
-    {
-        return new();
-    }
 }

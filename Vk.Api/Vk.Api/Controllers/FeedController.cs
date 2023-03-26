@@ -14,4 +14,9 @@ public class FeedController : ControllerBase
         return new();
     }
 
+    [HttpGet("posts/{userId:guid}")]
+    public UserPostsDto GetUserPosts([FromRoute] Guid userId)
+    {
+        return new();
+    }
 }
