@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Vk.Api.Domain.Dto;
 using Vk.Api.Domain.Models.Group;
 
 namespace Vk.Api.Controllers;
