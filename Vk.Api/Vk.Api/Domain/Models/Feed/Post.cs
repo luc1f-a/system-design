@@ -5,4 +5,6 @@ public class Post
     public PostAuthor Author { get; set; }
 
     public PostContent Content { get; set; }
+    
+    public DateTime CreationDate { get; set; }
 }

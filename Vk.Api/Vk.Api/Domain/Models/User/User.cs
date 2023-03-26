@@ -6,5 +6,5 @@ public class User
 
     public string Name { get; set; }
 
-    public string PicruteUrl { get; set; }
+    public string PictureUrl { get; set; }
 }
